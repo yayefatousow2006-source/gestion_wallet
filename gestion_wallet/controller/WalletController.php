@@ -33,7 +33,6 @@ final class WalletController
         }
 
         $transactions = WalletService::listerTransactions();
-
-        require_once __DIR__ . "/../view/wallet.view.php";
+        require_once __DIR__ . "/../voir/wallet.view.php";
     }
 }
