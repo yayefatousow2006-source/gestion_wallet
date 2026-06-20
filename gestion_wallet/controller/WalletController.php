@@ -20,15 +20,15 @@ final class WalletController
 
         if (isset($_POST["depot"])) {
             $message = WalletService::faireDepot(
-                $_POST["telephone"],
-                $_POST["montant"]
+                $_POST["telephoneDepot"],
+                $_POST["montantDepot"]
             );
         }
 
         if (isset($_POST["retrait"])) {
             $message = WalletService::faireRetrait(
-                $_POST["telephone"],
-                $_POST["montant"]
+                $_POST["telephoneRetrait"],
+                $_POST["montantRetrait"]
             );
         }
 
