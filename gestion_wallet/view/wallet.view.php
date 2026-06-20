@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Gestion Wallet</title>
@@ -15,15 +16,10 @@
 
 <form method="POST">
     <input type="text" name="nom" placeholder="Nom"><br><br>
-
     <input type="text" name="prenom" placeholder="Prénom"><br><br>
-
     <input type="text" name="telephone" placeholder="Téléphone"><br><br>
-
     <input type="text" name="code" placeholder="Code"><br><br>
-
     <input type="number" step="0.01" name="solde" placeholder="Solde"><br><br>
-
     <button type="submit" name="creer">Créer Wallet</button>
 </form>
 
@@ -32,10 +28,8 @@
 <h2>Faire un Dépôt</h2>
 
 <form method="POST">
-    <input type="text" name="telephone" placeholder="Téléphone"><br><br>
-
-    <input type="number" step="0.01" name="montant" placeholder="Montant"><br><br>
-
+    <input type="text" name="telephoneDepot" placeholder="Téléphone"><br><br>
+    <input type="number" step="0.01" name="montantDepot" placeholder="Montant"><br><br>
     <button type="submit" name="depot">Faire Dépôt</button>
 </form>
 
@@ -44,10 +38,8 @@
 <h2>Faire un Retrait</h2>
 
 <form method="POST">
-    <input type="text" name="telephone" placeholder="Téléphone"><br><br>
-
-    <input type="number" step="0.01" name="montant" placeholder="Montant"><br><br>
-
+    <input type="text" name="telephoneRetrait" placeholder="Téléphone"><br><br>
+    <input type="number" step="0.01" name="montantRetrait" placeholder="Montant"><br><br>
     <button type="submit" name="retrait">Faire Retrait</button>
 </form>
 
@@ -77,7 +69,6 @@
             <td><?php echo $transaction["telephone"]; ?></td>
         </tr>
     <?php } ?>
-
 </table>
 
 </body>
